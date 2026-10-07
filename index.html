@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Change your website title here -->
+    <title>Elite Appliance Repair | Fast & Reliable</title>
+    
+    <!-- This link imports the icons (Phone, Email, Instagram, Star) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* === YOUR BRANDING COLORS === */
+        :root {
+            --primary-color: #0056b3; /* Main Brand Blue */
+            --primary-hover: #004494; /* Darker Blue for button hover */
+            --background-color: #ffffff;
+            --section-bg: #f8f9fa; /* Light Gray for the About section */
+            --text-color: #333333;
+            --check-color: #28a745; /* Green checkmarks for services */
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 50px;
+            margin-bottom: 1.5rem;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .cta-button:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .experience-badge {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            padding: 0.5rem 1.2rem;
+            background-color: #e6f0ff;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        .sub-text {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        /* The Grid for the 5 Icons */
+        .contact-grid {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 3.5rem;
+        }
+
+        .contact-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: transform 0.2s ease, color 0.2s;
+        }
+
+        .contact-icon:hover {
+            transform: translateY(-3px);
+            color: var(--primary-color);
+        }
+
+        .contact-icon i {
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+            color: var(--primary-color);
+        }
+
+        /* Bio Box */
+        .about-section {
+            background-color: var(--section-bg);
+            padding: 2.5rem 2rem;
+            border-radius: 12px;
+            margin-bottom: 3.5rem;
+            border: 1px solid #eaeaea;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Services List */
+        .services-section {
+            text-align: left;
+            max-width: 450px;
+            margin: 0 auto 4rem auto;
+        }
+
+        .services-list {
+            list-style: none;
+        }
+
+        .services-list li {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .services-list li::before {
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            color: var(--check-color);
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            padding-top: 2.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+        
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .contact-grid { gap: 1.5rem; }
+            .contact-icon i { font-size: 1.8rem; }
+            .container { padding: 2rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- HEADER -->
+        <h1>Elite Appliance Repair</h1>
+        <h2>Appliance Repair & Installation in Cityville & Surrounding Area</h2>
+        
+        <!-- MAIN CTA BUTTON -->
+        <!-- Replace the phone number in "tel:..." and in the text -->
+        <a href="tel:+15551234567" class="cta-button">
+            <i class="fas fa-phone-alt"></i> Call Alex Now: (555) 123-4567
+        </a>
+        <br>
+        
+        <div class="experience-badge">15+ Years Experience</div>
+
+        <p class="sub-text">Call, Text or Email directly. You can also view my recent work on Instagram and read our Customer Reviews on Google.</p>
+
+        <!-- QUICK ACTION ICONS -->
+        <div class="contact-grid">
+            <a href="sms:+15551234567" class="contact-icon">
+                <i class="fas fa-comment-dots"></i>
+                Message
+            </a>
+            <a href="tel:+15551234567" class="contact-icon">
+                <i class="fas fa-phone"></i>
+                Phone
+            </a>
+            <a href="mailto:alex@yourdomain.com" class="contact-icon">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+            <!-- Put your Instagram link below -->
+            <a href="https://instagram.com/yourprofile" target="_blank" class="contact-icon">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <!-- Put your Google Maps Review link below -->
+            <a href="https://google.com/maps/yourlink" target="_blank" class="contact-icon">
+                <i class="fas fa-star"></i>
+                Reviews
+            </a>
+        </div>
+
+        <!-- ABOUT SECTION -->
+        <div class="about-section">
+            <p>With over 15 years of experience, I take pride in delivering top-quality appliance repair services while building a business grounded in honesty, reliability, and direct customer care. Every job is done right the first time.</p>
+        </div>
+
+        <!-- SERVICES SECTION -->
+        <div class="services-section">
+            <ul class="services-list">
+                <li>Washers & Dryers</li>
+                <li>Fridges & Freezers</li>
+                <li>Ovens, Wall Ovens & Cooktops</li>
+                <li>Microwaves & Rangehoods</li>
+                <li>Dishwashers & Garbage Disposals</li>
+                <li>New Appliance Installation</li>
+            </ul>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <a href="tel:+15551234567" class="cta-button" style="margin-bottom: 1rem;">
+                Call Alex: (555) 123-4567
+            </a>
+            <p style="color: #999; font-size: 0.85rem; margin-top: 1rem;">© 2026 Elite Appliance Repair. All rights reserved.</p>
+        </div>
+    </div>
+
+</body>
+</html>
